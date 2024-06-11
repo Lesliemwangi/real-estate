@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
-const PropertyCard = ({ property }) => {
+function PropertyCard ({ property }) {
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img
