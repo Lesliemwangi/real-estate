@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Signup from "../components/SignUp";
 import Login from "../components/Login";
@@ -16,13 +17,15 @@ function App() {
 
   return (
     <>
+      <Header />
       <Navbar
         handleShowSignup={handleShowSignupModal}
         handleShowLogin={handleShowLoginModal}
       />
       <Signup show={showSignupModal} handleClose={handleCloseSignupModal} />
       <Login show={showLoginModal} handleClose={handleCloseLoginModal} />
-      <Outlet /> 
+
+      <Outlet />
     </>
   );
 }

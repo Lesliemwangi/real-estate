@@ -1,7 +1,6 @@
-
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 const PropertyDetails = () => {
   const { id } = useParams();
@@ -42,7 +41,15 @@ const PropertyDetails = () => {
           <p>
             <strong>Description:</strong> {property.description}
           </p>
-          {/* Add more property details here */}
+          <p>
+            <strong>Bedrooms:</strong> {property.bedrooms}
+          </p>
+          <p>
+            <strong>Bathrooms:</strong> {property.bathrooms}
+          </p>
+          <p>
+            <strong>Amenities:</strong> {property.amenities.join(", ")}
+          </p>
         </Col>
       </Row>
     </Container>
