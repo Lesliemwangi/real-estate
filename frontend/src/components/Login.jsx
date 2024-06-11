@@ -1,31 +1,50 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
+import { useForm, Controller } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { FaGoogle, FaFacebook, FaLinkedin } from "react-icons/fa";
+
+const Schema = z.object({
+  username: z
+    .string({
+      required_error: "Username is required",
+    })
+    .min(1, { message: "Username is required" }),
+  email: z
+    .string({
+      required_error: "Email is required",
+    })
+    .min(1, { message: "Email is required" }),
+  password: z
+    .string({
+      required_error: "Password is required",
+    })
+    .min(1, { message: "Password is required" }),
+});
 
 function Login({ show, handleClose }) {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    username: "",
+  const {
+    register,
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(Schema),
+    defaultValues: {
+      username: "",
+      email: "",
+      password: "",
+    },
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (
-      formData.email === "example@example.com" &&
-      formData.password === "password"
-    ) {
+  const onSubmit = (data) => {
+    if (data.email === "example@example.com" && data.password === "password") {
       console.log("Login successful!");
       handleClose();
     } else {
       console.error("Login failed!");
     }
-
-    setFormData({ email: "", password: "", username: "" });
   };
 
   return (
@@ -36,43 +55,74 @@ function Login({ show, handleClose }) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicUsername">
-            <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
-              Username
-            </Form.Label>
-            <Form.Control
-              type="text"
-              name="username"
-              placeholder="Enter your username"
-              value={formData.username}
-              onChange={handleChange}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
-              Email address
-            </Form.Label>
-            <Form.Control
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
-              Password
-            </Form.Label>
-            <Form.Control
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              value={formData.password}
-              onChange={handleChange}
-            />
-          </Form.Group>
+        
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <Controller
+            name="username"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Form.Group className="mb-3" controlId="formBasicUsername">
+                <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
+                  Username
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your username"
+                  {...field}
+                />
+                {fieldState.error && (
+                  <span style={{ color: "red" }}>
+                    {fieldState.error.message}
+                  </span>
+                )}
+              </Form.Group>
+            )}
+          />
+
+          <Controller
+            name="email"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
+                  Email Adress
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your email"
+                  {...field}
+                />
+                {fieldState.error && (
+                  <span style={{ color: "red" }}>
+                    {fieldState.error.message}
+                  </span>
+                )}
+              </Form.Group>
+            )}
+          />
+
+          <Controller
+            name="password"
+            control={control}
+            render={({ field, fieldState }) => (
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label style={{ fontSize: "15px", fontWeight: "bold" }}>
+                  Password
+                </Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your password"
+                  {...field}
+                />
+                {fieldState.error && (
+                  <span style={{ color: "red" }}>
+                    {fieldState.error.message}
+                  </span>
+                )}
+              </Form.Group>
+            )}
+          />
+
           <Button variant="primary" type="submit">
             Log In
           </Button>
