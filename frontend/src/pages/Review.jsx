@@ -7,10 +7,8 @@ const Review = ({ propertyId }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here, such as sending the review to a server
-    console.log("Submitted Review:", review);
+    console.log("Submitted Review:", { propertyId, review });
     setReview("");
-    // After submission, hide the form
     setShowForm(false);
   };
 
@@ -24,12 +22,12 @@ const Review = ({ propertyId }) => {
       {showForm && (
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="reviewTextArea">
-            <Form.Label>Write your review:</Form.Label>
             <Form.Control
               as="textarea"
               rows={3}
               value={review}
               onChange={(e) => setReview(e.target.value)}
+              placeholder="Write your review here..."
             />
           </Form.Group>
           <Button variant="primary" type="submit">
