@@ -44,7 +44,6 @@ const Schema = z.object({
 
 function Signup({ show, handleClose }) {
   const {
-    register,
     control,
     handleSubmit,
     formState: { errors },
@@ -157,7 +156,7 @@ function Signup({ show, handleClose }) {
                   Email Adress
                 </Form.Label>
                 <Form.Control
-                  type="text"
+                  type="email"
                   placeholder="Enter your email"
                   {...field}
                 />
@@ -191,7 +190,7 @@ function Signup({ show, handleClose }) {
               </Form.Group>
             )}
           />
-          
+
           <Controller
             name="passwordConfirm"
             control={control}

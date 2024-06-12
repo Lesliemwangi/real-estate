@@ -3,7 +3,6 @@ import { Modal, Button, Form } from "react-bootstrap";
 import { useForm, Controller } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { FaGoogle, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const Schema = z.object({
   username: z
@@ -25,7 +24,6 @@ const Schema = z.object({
 
 function Login({ show, handleClose }) {
   const {
-    register,
     control,
     handleSubmit,
     formState: { errors },
@@ -55,7 +53,7 @@ function Login({ show, handleClose }) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        
+
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Controller
             name="username"
@@ -88,7 +86,7 @@ function Login({ show, handleClose }) {
                   Email Adress
                 </Form.Label>
                 <Form.Control
-                  type="text"
+                  type="email"
                   placeholder="Enter your email"
                   {...field}
                 />
@@ -110,7 +108,7 @@ function Login({ show, handleClose }) {
                   Password
                 </Form.Label>
                 <Form.Control
-                  type="text"
+                  type="password"
                   placeholder="Enter your password"
                   {...field}
                 />
