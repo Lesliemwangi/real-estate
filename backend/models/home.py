@@ -84,47 +84,55 @@ class PropertyDetails:
         """
         cursor.execute(sql_create)
         conn.commit()
+        
+    @classmethod
+    def get_by_id(cls, property_id):
+        sql = f"SELECT * FROM {cls.TABLE_NAME} WHERE id = ?"
+        cursor.execute(sql, (property_id,))
+        row = cursor.fetchone()
+        return cls.row_to_instance(row)
+
 
 
 PropertyDetails.create_table()
 
-# property1 = PropertyDetails(
-#     name="Luxury Villa",
-#     description="A beautiful villa with sea view.",
-#     image_url="http://example.com/luxury_villa.jpg",
-#     price=1200000,
-#     location="California",
-#     size=3500,
-#     bedrooms=5,
-#     bathrooms=4,
-#     amenities="Pool, Garden, Garage"
-# )
+property1 = PropertyDetails(
+    name="Luxury Villa",
+    description="A beautiful villa with sea view.",
+    image_url="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=400",
+    price=1200000,
+    location="California",
+    size=3500,
+    bedrooms=5,
+    bathrooms=4,
+    amenities="Pool, Garden, Garage"
+)
 
-# property2 = PropertyDetails(
-#     name="Modern Apartment",
-#     description="A spacious apartment in the city center.",
-#     image_url="http://example.com/modern_apartment.jpg",
-#     price=850000,
-#     location="New York",
-#     size=2000,
-#     bedrooms=3,
-#     bathrooms=2,
-#     amenities="Gym, Concierge, Parking"
-# )
+property2 = PropertyDetails(
+    name="Modern Apartment",
+    description="A spacious apartment in the city center.",
+    image_url="https://media.istockphoto.com/id/1165384568/photo/europe-modern-complex-of-residential-buildings.jpg?s=612x612&w=is&k=20&c=unFskM1dq4OkRXm6SX7uAVWzXT9cEnPsEpNvjIoYX6E=",
+    price=850000,
+    location="New York",
+    size=2000,
+    bedrooms=3,
+    bathrooms=2,
+    amenities="Gym, Concierge, Parking"
+)
 
-# property3 = PropertyDetails(
-#     name="Cozy Cottage",
-#     description="A charming cottage in the countryside.",
-#     image_url="http://example.com/cozy_cottage.jpg",
-#     price=450000,
-#     location="Texas",
-#     size=1500,
-#     bedrooms=3,
-#     bathrooms=2,
-#     amenities="Fireplace, Garden"
-# )
+property3 = PropertyDetails(
+    name="Cozy Cottage",
+    description="A charming cottage in the countryside.",
+    image_url="https://images.pexels.com/photos/17952557/pexels-photo-17952557/free-photo-of-wooden-cottage-in-a-village.jpeg?auto=compress&cs=tinysrgb&w=400",
+    price=450000,
+    location="Texas",
+    size=1500,
+    bedrooms=3,
+    bathrooms=2,
+    amenities="Fireplace, Garden"
+)
 
-# property1.save()
-# property2.save()
-# property3.save()
+property1.save()
+property2.save()
+property3.save()
 
