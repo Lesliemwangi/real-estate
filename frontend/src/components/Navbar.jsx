@@ -3,9 +3,13 @@ import React from "react";
 import { Navbar as NavigationBar, Nav, Container } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-function Navbar({ handleShowSignup, handleShowLogin }) {
+function Navbar() {
   return (
-    <NavigationBar bg="light" expand="lg">
+    <NavigationBar
+      bg="light"
+      expand="lg"
+      style={{ position: "sticky", top: 0, zIndex: 1000 }}
+    >
       <Container>
         <NavigationBar.Toggle aria-controls="basic-navbar-nav" />
         <NavigationBar.Collapse id="basic-navbar-nav">
@@ -19,15 +23,18 @@ function Navbar({ handleShowSignup, handleShowLogin }) {
             >
               Property Details
             </Nav.Link>
+            <Nav.Link href="/about" style={{ fontSize: "20px", fontWeight: "bold" }}>
+              About Us
+            </Nav.Link>
           </Nav>
-          <Nav className="ms-auto">
+          {/* <Nav className="ms-auto">
             <Nav.Link onClick={handleShowSignup}>
               <Button >Sign Up</Button>
             </Nav.Link>
             <Nav.Link onClick={handleShowLogin}>
               <Button>Log In</Button>
             </Nav.Link>
-          </Nav>
+          </Nav> */}
         </NavigationBar.Collapse>
       </Container>
     </NavigationBar>

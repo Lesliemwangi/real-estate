@@ -21,7 +21,11 @@ const Booking = ({ propertyId }) => {
   return (
     <>
       {!showForm && (
-        <Button variant="primary" onClick={() => setShowForm(true)}>
+        <Button
+          variant="primary"
+          className="ms-3"
+          onClick={() => setShowForm(true)}
+        >
           Book Now
         </Button>
       )}

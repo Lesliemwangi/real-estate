@@ -111,7 +111,7 @@ property1 = PropertyDetails(
 property2 = PropertyDetails(
     name="Modern Apartment",
     description="A spacious apartment in the city center.",
-    image_url="https://media.istockphoto.com/id/1165384568/photo/europe-modern-complex-of-residential-buildings.jpg?s=612x612&w=is&k=20&c=unFskM1dq4OkRXm6SX7uAVWzXT9cEnPsEpNvjIoYX6E=",
+    image_url="https://media.istockphoto.com/id/1146066756/photo/new-apartment-house-home-building-complex-concept-playground.jpg?s=612x612&w=0&k=20&c=AfmsITVGkSBzsVTqaVpMYZqKOX8mhwRZ_aQcCIm3Y2U=",
     price=850000,
     location="New York",
     size=2000,
@@ -132,7 +132,46 @@ property3 = PropertyDetails(
     amenities="Fireplace, Garden"
 )
 
+property4 = PropertyDetails(
+    name="Luxury Mansion",
+    description="A luxury mansion in the surbubs.",
+    image_url="https://media.istockphoto.com/id/1028861694/photo/3d-rendering-of-modern-cozy-house-by-the-river-cool-autumn-evening-with-soft-light.jpg?s=612x612&w=0&k=20&c=pbfcGFhAhMEDxruZkuPJoXGK6eScKRnMmDwTpHUkSGs=",
+    price=500000,
+    location="Los Angeles",
+    size=2000,
+    bedrooms=3,
+    bathrooms=2,
+    amenities="Fireplace, Garden, pool"
+)
+
+property5 = PropertyDetails(
+    name="Cozy Cottage",
+    description="A charming cottage in the countryside.",
+    image_url="https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=",
+    price=450000,
+    location="Texas",
+    size=1500,
+    bedrooms=3,
+    bathrooms=2,
+    amenities="Fireplace, Garden"
+)
+
+property6 = PropertyDetails(
+    name="Apartments",
+    description="A charming cottage in the countryside.",
+    image_url="https://media.istockphoto.com/id/1407524985/photo/cityscape-of-a-residential-area-with-modern-apartment-buildings-new-green-urban-landscape-in.jpg?s=612x612&w=0&k=20&c=xyGhc476UjkYfWv930nBOFRgvjrWM28i4jHi2bldFYE=",
+    price=450000,
+    location="Texas",
+    size=1500,
+    bedrooms=3,
+    bathrooms=2,
+    amenities="Fireplace, Garden"
+)
+
 property1.save()
 property2.save()
 property3.save()
+property4.save()
+property5.save()
+property6.save()
 
