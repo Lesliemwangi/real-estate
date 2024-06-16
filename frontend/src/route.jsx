@@ -2,22 +2,23 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "./pages/App";
-import Properties from "./pages/Properties";
+import Home from "./components/Home";
+import Properties from "./components/Properties";
 import PropertyDetails from "./pages/PropertyDetails";
 import AboutUs from "./pages/AboutUs";
 import Contacts from "./components/Contacts";
 import News from "./components/News";
-import NewsDetail from "./pages/NewsDetail"; 
+import NewsDetail from "./pages/NewsDetail";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      // {
-      //   path: "/",
-      //   element: <Home />,
-      // },
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "properties",
         element: <Properties />,
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
         element: <News />,
       },
       {
-        path: "/news/:id", 
+        path: "/news/:id",
         element: <NewsDetail />,
       },
       {

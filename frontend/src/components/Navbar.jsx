@@ -9,7 +9,7 @@ function Navbar() {
       expand="lg"
       style={{ position: "sticky", top: 0, zIndex: 1000 }}
     >
-      <Container>
+      <Container fluid>
         <NavigationBar.Brand href="/">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/008/124/777/small_2x/real-estate-logo-house-logo-home-logo-sign-symbol-free-vector.jpg"
@@ -20,34 +20,52 @@ function Navbar() {
         </NavigationBar.Brand>
         <NavigationBar.Toggle aria-controls="basic-navbar-nav" />
         <NavigationBar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/" style={{ fontSize: "20px", fontWeight: "bold" }}>
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="/properties"
-              style={{ fontSize: "20px", fontWeight: "bold" }}
-            >
-              Properties
-            </Nav.Link>
-            <Nav.Link
-              href="/about"
-              style={{ fontSize: "20px", fontWeight: "bold" }}
-            >
-              About Us
-            </Nav.Link>
-            <Nav.Link
-              href="/news"
-              style={{ fontSize: "20px", fontWeight: "bold" }}
-            >
-              News
-            </Nav.Link>
-            <Nav.Link
-              href="/contacts"
-              style={{ fontSize: "20px", fontWeight: "bold" }}
-            >
-              Contacts
-            </Nav.Link>
+          <Nav className="w-100 justify-content-center">
+            <Nav.Item className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <Nav.Link
+                href="/"
+                className="text-center"
+                style={{ fontSize: "20px", fontWeight: "bold" }}
+              >
+                Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <Nav.Link
+                href="/properties"
+                className="text-center"
+                style={{ fontSize: "20px", fontWeight: "bold" }}
+              >
+                Properties
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <Nav.Link
+                href="/about"
+                className="text-center"
+                style={{ fontSize: "20px", fontWeight: "bold" }}
+              >
+                About Us
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <Nav.Link
+                href="/news"
+                className="text-center"
+                style={{ fontSize: "20px", fontWeight: "bold" }}
+              >
+                News
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <Nav.Link
+                href="/contacts"
+                className="text-center"
+                style={{ fontSize: "20px", fontWeight: "bold" }}
+              >
+                Contacts
+              </Nav.Link>
+            </Nav.Item>
           </Nav>
         </NavigationBar.Collapse>
       </Container>

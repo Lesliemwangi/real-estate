@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import PropertyCard from "../components/PropertyCard";
+import PropertyCard from "./PropertyCard";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
