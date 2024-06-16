@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React from "react";
 import { Navbar as NavigationBar, Nav, Container } from "react-bootstrap";
 
@@ -17,6 +16,12 @@ function Navbar() {
             className="d-inline-block align-top"
             alt="Luciannah Ventures logo"
           />
+          <span
+            className="ml-2"
+            style={{ fontSize: "20px", fontWeight: "bold" }}
+          >
+            Luciannah Ventures
+          </span>
         </NavigationBar.Brand>
         <NavigationBar.Toggle aria-controls="basic-navbar-nav" />
         <NavigationBar.Collapse id="basic-navbar-nav">
