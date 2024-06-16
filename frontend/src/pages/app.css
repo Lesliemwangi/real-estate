@@ -1,7 +1,23 @@
 body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
   background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s; 
+  cursor: pointer; 
+  background-color: #fff; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 8px; 
+}
+
+.card:hover, .card:focus, .card:active {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .custom-card {
@@ -9,6 +25,7 @@ body {
   height: 30rem;
   display: flex;
   flex-direction: column;
+  transition: transform 0.2s; 
 }
 
 .custom-card-img {
@@ -21,6 +38,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.25rem;
+}
+.card .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
 }
 
 .error-message {
@@ -28,3 +51,5 @@ body {
   font-size: 0.875rem;
   margin-top: 0.25rem; 
 }
+
+

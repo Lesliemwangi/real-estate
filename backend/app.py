@@ -27,11 +27,6 @@ class HomeModel(BaseModel):
     amenities: str
 
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
 @app.get("/propertydetails")
 def get_propertydetails():
     properties = PropertyDetails.get_all()

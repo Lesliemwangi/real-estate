@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CoreValues from "./CoreValues";
-import Team from "./Team";
+import Team from "./Professionals";
 
 function AboutUs() {
   return (

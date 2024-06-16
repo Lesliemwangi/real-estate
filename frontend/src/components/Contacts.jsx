@@ -78,7 +78,7 @@ function Contacts() {
                   <Form.Label
                     style={{ fontWeight: "bold", fontSize: "1.3rem" }}
                   >
-                    Name
+                    Name:
                   </Form.Label>
                   <Form.Control
                     type="text"
@@ -102,7 +102,7 @@ function Contacts() {
                   <Form.Label
                     style={{ fontWeight: "bold", fontSize: "1.3rem" }}
                   >
-                    Email address
+                    Email address:
                   </Form.Label>
                   <Form.Control
                     type="email"
@@ -126,7 +126,7 @@ function Contacts() {
                   <Form.Label
                     style={{ fontWeight: "bold", fontSize: "1.3rem" }}
                   >
-                    Subject
+                    Subject:
                   </Form.Label>
                   <Form.Control
                     type="text"
@@ -150,7 +150,7 @@ function Contacts() {
                   <Form.Label
                     style={{ fontWeight: "bold", fontSize: "1.3rem" }}
                   >
-                    Message
+                    Message:
                   </Form.Label>
                   <Form.Control
                     as="textarea"

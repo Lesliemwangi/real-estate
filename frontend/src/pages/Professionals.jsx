@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card, Row, Col } from "react-bootstrap";
 
-function Team() {
+
+function Professionals() {
   const [professionals, setProfessionals] = useState([]);
 
   useEffect(() => {
@@ -41,9 +42,13 @@ function Team() {
       <Row className="mb-32">
         {professionals.map((professional, index) => (
           <Col key={index} md={4} className="mb-4">
-            <Card>
-              <Card.Img variant="top" src={professional.image_url} />
-              <Card.Body>
+            <Card className="custom-card">
+              <Card.Img
+                variant="top"
+                src={professional.image_url}
+                className="custom-card-img"
+              />
+              <Card.Body className="custom-card-body">
                 <Card.Title>{professional.title}</Card.Title>
                 <Card.Text>{professional.description}</Card.Text>
               </Card.Body>
@@ -55,4 +60,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default Professionals;

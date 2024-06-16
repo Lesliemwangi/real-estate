@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
 const News = () => {
   const [articles, setArticles] = useState([]);
 
@@ -33,7 +34,7 @@ const News = () => {
       <Row xs={1} md={2} lg={3} className="g-4">
         {articles.map((article) => (
           <Col key={article.id}>
-            <Card className="h-100">
+            <Card className="h-100 custom-card">
               <Card.Img
                 variant="top"
                 src={article.image_url}

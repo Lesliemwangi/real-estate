@@ -8,7 +8,7 @@ import PropertyDetails from "./pages/PropertyDetails";
 import AboutUs from "./pages/AboutUs";
 import Contacts from "./components/Contacts";
 import News from "./components/News";
-import NewsDetail from "./pages/NewsDetails";
+import NewsDetails from "./pages/NewsDetails";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/news/:id",
-        element: <NewsDetail />,
+        element: <NewsDetails />,
       },
       {
         path: "/contacts",

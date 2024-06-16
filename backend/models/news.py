@@ -169,25 +169,25 @@ news = [
         title="Impact of Interest Rates on Real Estate Market",
         description="Analyzing the relationship between interest rates and the real estate market.",
         content="Interest rates have a significant impact on the real estate market. When interest rates rise, it can lead to: 1) Decreased affordability for homebuyers, as higher mortgage rates make monthly payments less affordable 2) Reduced demand for homes, as some buyers are priced out of the market 3) Slower price appreciation, as higher rates limit the amount buyers can afford to pay 4) Increased costs for real estate investors, as financing for investment properties becomes more expensive. Conversely, when interest rates decline, it can stimulate the real estate market by making homes more affordable and increasing buyer demand. Real estate investors and homebuyers need to closely monitor interest rate trends and adjust their strategies accordingly to navigate the market effectively.",
-        image_url="https://via.placeholder.com/150",
+        image_url="https://www.noradarealestate.com/wp-content/uploads/2023/06/how-rising-interest-rates-affect-real-estate-investors.jpeg",
     ),
     NewsDetails(
         title="Investment Strategies for Rental Properties",
         description="Effective strategies for generating passive income through rental properties.",
         content="Investing in rental properties can be a lucrative strategy, but it also comes with unique challenges. Key considerations include: 1) Location - choosing a desirable location with strong demand 2) Property management - either self-managing or hiring a professional property management company 3) Pricing and occupancy - setting the right rental rates and maximizing occupancy 4) Regulations and taxes - understanding local laws and tax implications 5) Maintenance and upkeep - ensuring the property is well-maintained to attract tenants. Successful rental property investors focus on properties that can generate consistent cash flow and appreciate in value over time.",
-        image_url="https://via.placeholder.com/150",
+        image_url="https://media.licdn.com/dms/image/D5612AQHByux-nNnkmw/article-cover_image-shrink_720_1280/0/1709746466934?e=2147483647&v=beta&t=aot-yRbGJrELOsIea5uS4V9PDaygQvF_w3J1kqwdMu0",
     ),
     NewsDetails(
         title="Legal Considerations in Real Estate Transactions",
         description="Important legal aspects to consider when buying or selling real estate properties.",
         content="Real estate transactions involve a complex web of legal considerations that investors and homebuyers must navigate. Some key legal aspects to be aware of include: 1) Property title and ownership - Ensuring clear and unencumbered title to the property 2) Zoning and land use regulations - Understanding how the property can be used and any restrictions 3) Contracts and disclosures - Carefully reviewing purchase agreements, lease contracts, and required disclosures 4) Taxes and fees - Accounting for property taxes, transfer taxes, and other applicable fees 5) Financing and mortgages - Complying with lender requirements and understanding loan terms 6) Liability and insurance - Protecting against risks through appropriate insurance coverage. Consulting with experienced real estate attorneys and professionals can help ensure a smooth and legally sound transaction.",
-        image_url="https://via.placeholder.com/150",
+        image_url="https://sinailawfirm.com/wp-content/uploads/2022/01/Real-Estate-Transactions-1.jpg",
     ),
     NewsDetails(
         title="Tips for Negotiating Real Estate Deals",
         description="Negotiation tips to help you secure the best deals in real estate transactions.",
         content="Effective negotiation is a critical skill for real estate investors and homebuyers. Some tips for negotiating successful real estate deals include: 1) Thoroughly research the market and comparable properties to understand fair pricing 2) Leverage your position as a cash buyer or pre-approved borrower to gain an advantage 3) Identify the seller's motivations and pain points to tailor your offer accordingly 4) Propose creative deal structures, such as lease-to-own or seller financing, to make your offer more appealing 5) Be prepared to walk away if the deal doesn't align with your investment criteria or budget 6) Maintain a professional and courteous demeanor throughout the negotiation process. Effective negotiation can mean the difference between a good deal and a great one, so it's a skill worth developing for any real estate investor or homebuyer.",
-        image_url="https://via.placeholder.com/150",
+        image_url="https://leysbrook.co.uk/wp-content/uploads/2023/09/130923-Property-Negotiations-Tips-to-Help-You-Seal-a-Successful-Deal.png",
     ),
 ];
 
