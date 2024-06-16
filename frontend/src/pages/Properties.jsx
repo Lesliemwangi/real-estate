@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import PropertyCard from "../components/PropertyCard";
 
-const Home = () => {
+const Properties = () => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Properties;

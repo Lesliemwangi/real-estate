@@ -8,7 +8,10 @@ function AboutUs() {
     <section className="py-12 py-md-16 py-lg-24 overflow-hidden">
       <Container className="mw-lg mw-md-2xl mx-auto mw-lg-none">
         <div className="mb-32">
-          <h1 className="font-heading mw-4xl text-center mb-24 text-black">
+          <h1
+            className="font-heading mw-4xl text-center mb-24 text-black"
+            style={{ fontSize: "3.0rem" }}
+          >
             <u>Redefining Real Estate Experience</u>
           </h1>
           <Row className="mb-32 mt-10">

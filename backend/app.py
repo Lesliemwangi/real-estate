@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from models.home import PropertyDetails
+from models.properties import PropertyDetails
+from models.about import Professionals
 
 app = FastAPI()
 
@@ -52,3 +53,17 @@ def get_home():
 @app.post("/home")
 def save_home(data: HomeModel):
     return data
+
+
+@app.get("/professionals")
+def get_professionals():
+    professionals = Professionals.get_all()
+    return [professional.to_dict() for professional in professionals]
+
+
+@app.get("/professionals/{professional_id}")
+def get_professional(professional_id: int):
+    professional = Professionals.get_by_id(professional_id)
+    if professional:
+        return professional.to_dict()
+    return {"error": "Professional not found"}
