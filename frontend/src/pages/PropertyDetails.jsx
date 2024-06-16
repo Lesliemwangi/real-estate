@@ -25,33 +25,41 @@ const PropertyDetails = () => {
     <Container>
       <Row>
         <Col md={6}>
-          <img src={property.image_url} alt={property.name} width="100%" />
+          <div className="property-card">
+            <img
+              src={property.image_url}
+              alt={property.name}
+              className="property-image"
+            />
+          </div>
         </Col>
         <Col md={6}>
-          <h2>{property.name}</h2>
-          <p>
-            <strong>Location:</strong> {property.location}
-          </p>
-          <p>
-            <strong>Price:</strong> {property.price}
-          </p>
-          <p>
-            <strong>Description:</strong> {property.description}
-          </p>
-          <p>
-            <strong>Size:</strong> {property.size}
-          </p>
-          <p>
-            <strong>Bedrooms:</strong> {property.bedrooms}
-          </p>
-          <p>
-            <strong>Bathrooms:</strong> {property.bathrooms}
-          </p>
-          <p>
-            <strong>Amenities:</strong> {property.amenities}
-          </p>
-          <Review propertyId={property.id} />
-          <Booking propertyId={property.id} />
+          <div className="property-card">
+            <h2>{property.name}</h2>
+            <p>
+              <strong>Location:</strong> {property.location}
+            </p>
+            <p>
+              <strong>Price:</strong> {property.price}
+            </p>
+            <p>
+              <strong>Description:</strong> {property.description}
+            </p>
+            <p>
+              <strong>Size:</strong> {property.size}
+            </p>
+            <p>
+              <strong>Bedrooms:</strong> {property.bedrooms}
+            </p>
+            <p>
+              <strong>Bathrooms:</strong> {property.bathrooms}
+            </p>
+            <p>
+              <strong>Amenities:</strong> {property.amenities}
+            </p>
+            <Review propertyId={property.id} />
+            <Booking propertyId={property.id} />
+          </div>
         </Col>
       </Row>
     </Container>
@@ -59,4 +67,3 @@ const PropertyDetails = () => {
 };
 
 export default PropertyDetails;
-

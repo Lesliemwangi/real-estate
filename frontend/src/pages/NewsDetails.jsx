@@ -1,4 +1,3 @@
-// src/components/NewsDetail.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
@@ -183,7 +182,7 @@ const articles = [
   },
 ];
 
-const NewsDetail = () => {
+const NewsDetails = () => {
   const { id } = useParams();
   const article = articles.find((article) => article.id === parseInt(id));
 
@@ -238,4 +237,4 @@ const NewsDetail = () => {
   );
 };
 
-export default NewsDetail;
+export default NewsDetails;

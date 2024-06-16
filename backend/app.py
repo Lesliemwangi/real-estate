@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from models.properties import PropertyDetails
 from models.about import Professionals
+from models.news import NewsDetails
 
 app = FastAPI()
 
@@ -45,16 +46,6 @@ def get_property_detail(property_id: int):
     return {"error": "Property not found"}
 
 
-@app.get("/home")
-def get_home():
-    return [{"name": "Mansion"}]
-
-
-@app.post("/home")
-def save_home(data: HomeModel):
-    return data
-
-
 @app.get("/professionals")
 def get_professionals():
     professionals = Professionals.get_all()
@@ -67,3 +58,18 @@ def get_professional(professional_id: int):
     if professional:
         return professional.to_dict()
     return {"error": "Professional not found"}
+
+
+@app.get("/newsdetails")
+def get_newsdetails():
+    news = NewsDetails.get_all()
+    return [news.to_dict() for news in news]
+
+
+@app.get("/newsdetails/{news_id}")
+def get_news_detail(news_id: int):
+    news = NewsDetails.get_by_id(news_id)
+    if news:
+        return news.to_dict()
+    else:
+        return {"error": "News not found for the provided ID"}

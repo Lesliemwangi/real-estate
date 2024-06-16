@@ -8,7 +8,7 @@ import PropertyDetails from "./pages/PropertyDetails";
 import AboutUs from "./pages/AboutUs";
 import Contacts from "./components/Contacts";
 import News from "./components/News";
-import NewsDetail from "./pages/NewsDetail";
+import NewsDetail from "./pages/NewsDetails";
 
 const router = createBrowserRouter([
   {

@@ -383,17 +383,6 @@ properties = [
         amenities="Pool, Tennis Court, Garden"
     ),
     PropertyDetails(
-        name="Seaside Bungalow",
-        description="A charming seaside bungalow offering stunning ocean views and direct beach access. Features include a large garden, a garage, and a cozy living space. Perfect for those who love the beach lifestyle.",
-        image_url="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=400",
-        price=950000,
-        location="California",
-        size=1500,
-        bedrooms=3,
-        bathrooms=2,
-        amenities="Garden, Garage"
-    ),
-    PropertyDetails(
         name="Mountain Retreat",
         description="A beautiful mountain retreat offering breathtaking views and a peaceful atmosphere. Features include a large garden, a fireplace, and spacious living areas. Perfect for those seeking tranquility and natural beauty.",
         image_url="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=400",
