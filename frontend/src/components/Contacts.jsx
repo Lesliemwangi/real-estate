@@ -47,23 +47,18 @@ function Contacts() {
   const handleCloseModal = () => setShowModal(false);
 
   const onSubmit = (data) => {
-    // Simulate form submission (replace with actual logic)
     console.log("Form Data:", data);
 
-    // You can set different messages based on your submission logic
     setModalMessage("Message successfully sent!");
 
     handleShowModal();
-
-    // Reset form after submission
-    reset();
   };
 
   return (
     <Container className="my-5">
       <h2
         className="text-center mb-4"
-        style={{ fontSize: "2.5rem", textDecoration: "underline" }}
+        style={{ fontSize: "2.5rem", fontWeight: "bold", textDecoration: "underline" }}
       >
         Contact Us
       </h2>

@@ -10,7 +10,7 @@ function AboutUs() {
         <div className="mb-32">
           <h1
             className="font-heading mw-4xl text-center mb-24 text-black"
-            style={{ fontSize: "3.0rem" }}
+            style={{ fontSize: "3.0rem", fontWeight: "bold" }}
           >
             <u>Redefining Real Estate Experience</u>
           </h1>

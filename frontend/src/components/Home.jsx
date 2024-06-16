@@ -6,7 +6,7 @@ function HomePage() {
     <Container fluid className="homePage">
       <Row className="textContainer">
         <Col className="d-flex align-items-center justify-content-center">
-          <h1 className="text-center" style={{fontSize: "50px", textDecoration: "underline"}}>
+          <h1 className="text-center" style={{fontSize: "50px", fontWeight: "bold", textDecoration: "underline"}}>
             Find Real Estate & Get Your Dream Place
           </h1>
         </Col>
@@ -26,7 +26,7 @@ function HomePage() {
               maxWidth: "100%",
               height: "auto",
               position: "relative",
-              borderRadius: "15px", // Adjust the border radius as per your preference
+              borderRadius: "15px", 
             }}
           />
         </Col>
