@@ -52,9 +52,9 @@ function Footer() {
             <h5>
               <u>Contact Info</u>
             </h5>
-            <p>Address: 123 Main St, City, Country</p>
-            <p>Email: info@example.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 206 Washington, Seattle</p>
+            <p>Email: luciannahventures@realestate.com</p>
+            <p>Phone: +1 (206) 456-7890</p>
           </div>
         </div>
         <div className="row mt-3">
