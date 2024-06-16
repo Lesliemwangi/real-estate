@@ -7,9 +7,9 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col-md-4">
-            <h5>
+            <h3>
               <u>Luciannah Ventures</u>
-            </h5>
+            </h3>
             <p>
               Luciannah Ventures is dedicated to providing exceptional real
               estate solutions with a focus on customer satisfaction and
@@ -17,9 +17,9 @@ function Footer() {
             </p>
           </div>
           <div className="col-md-4">
-            <h5>
+            <h3>
               <u>Links</u>
-            </h5>
+            </h3>
             <ul className="list-unstyled">
               <li>
                 <Link to="/" className="text-dark">
@@ -49,9 +49,9 @@ function Footer() {
             </ul>
           </div>
           <div className="col-md-4">
-            <h5>
+            <h3>
               <u>Contact Info</u>
-            </h5>
+            </h3>
             <p>Address: 206 Washington, Seattle</p>
             <p>Email: luciannahventures@realestate.com</p>
             <p>Phone: +1 (206) 456-7890</p>

@@ -17,7 +17,7 @@ class NewsDetails:
         VALUES (?,?,?,?)
         """
         cursor.execute(sql, (self.title, self.description,
-                       self.content,  self.image_url))
+                       self.content, self.image_url))
         conn.commit()
         self.id = cursor.lastrowid
         print(f"Inserted news with ID: {self.id}")
@@ -26,7 +26,7 @@ class NewsDetails:
     def to_dict(self):
         return {
             'id': self.id,
-            'name': self.title,
+            'title': self.title,  # Ensure 'title' is used here
             'description': self.description,
             'content': self.content,
             'image_url': self.image_url
@@ -79,6 +79,7 @@ class NewsDetails:
 
 
 NewsDetails.create_table()
+
 
 news = [
     NewsDetails(
@@ -191,5 +192,5 @@ news = [
     ),
 ];
 
-for news in news:
-    news.save()
+for article in news:
+    article.save()

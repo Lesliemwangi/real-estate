@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-
 const News = () => {
   const [articles, setArticles] = useState([]);
 
@@ -11,7 +10,7 @@ const News = () => {
       try {
         const response = await fetch("http://localhost:8000/newsdetails");
         if (!response.ok) {
-          throw new Error("Network response was not ok" + response.statusText);
+          throw new Error("Network response was not ok " + response.statusText);
         }
         const data = await response.json();
         setArticles(data);
@@ -41,7 +40,9 @@ const News = () => {
                 alt={article.title}
               />
               <Card.Body>
-                <Card.Title>{article.title}</Card.Title>
+                <Card.Title style={{ fontWeight: "bold" }}>
+                  {article.title}
+                </Card.Title>
                 <Card.Text>{article.description}</Card.Text>
                 <Link to={`/news/${article.id}`} className="btn btn-primary">
                   Read more
