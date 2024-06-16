@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { useParams, useNavigate } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Booking from "./Booking";
 import Review from "./Review";
 
 const PropertyDetails = () => {
   const { id } = useParams();
   const [property, setProperty] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`http://localhost:8000/propertydetails/${id}`)
@@ -22,7 +23,10 @@ const PropertyDetails = () => {
   }
 
   return (
-    <Container>
+    <Container className="mb-5">
+      <Button onClick={() => navigate(-1)} className="mb-3">
+        Back
+      </Button>
       <Row>
         <Col md={6}>
           <div className="property-card">
@@ -35,26 +39,34 @@ const PropertyDetails = () => {
         </Col>
         <Col md={6}>
           <div className="property-card">
-            <h2>{property.name}</h2>
-            <p>
+            <h2
+              style={{
+                fontSize: "2.5rem",
+                fontWeight: "bold",
+                textDecoration: "underline",
+              }}
+            >
+              {property.name}
+            </h2>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Location:</strong> {property.location}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Price:</strong> {property.price}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Description:</strong> {property.description}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Size:</strong> {property.size}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Bedrooms:</strong> {property.bedrooms}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Bathrooms:</strong> {property.bathrooms}
             </p>
-            <p>
+            <p style={{ fontSize: "1.3rem" }}>
               <strong>Amenities:</strong> {property.amenities}
             </p>
             <Review propertyId={property.id} />
