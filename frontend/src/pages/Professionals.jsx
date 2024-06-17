@@ -15,19 +15,19 @@ function Professionals() {
   return (
     <>
       <h3
-        className="font-heading mb-14 text-center text-black"
-        style={{ fontSize: "2.5rem" }}
+        className="font-heading mb-14 text-center text-white"
+        style={{ fontSize: "3.0rem", fontWeight: "bold" }}
       >
         <u>Our Professionals</u>
       </h3>
       <div className="text-center mb-16">
         <h4
-          className="mb-6 text-center text-black"
-          style={{ fontSize: "2.0rem" }}
+          className="mb-6 text-center text-white"
+          style={{ fontSize: "2.5rem" }}
         >
           <u>Meet the Team</u>
         </h4>
-        <p className="text-secondary-light mb-0" style={{ fontSize: "1.2rem" }}>
+        <p className="text-secondary-light mb-0" style={{ fontSize: "1.5rem" }}>
           Our team comprises dedicated professionals who bring diverse skills
           and expertise to the table. Each member is passionate about real
           estate and committed to delivering exceptional service to our clients.

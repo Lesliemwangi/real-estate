@@ -6,17 +6,20 @@ import Team from "./Professionals";
 function AboutUs() {
   return (
     <section className="py-12 py-md-16 py-lg-24 overflow-hidden">
-      <Container className="mw-lg mw-md-2xl mx-auto mw-lg-none">
+      <Container className="mw-lg mw-md-2xl mx-auto mw-lg-none text-white">
         <div className="mb-32">
           <h1
-            className="font-heading mw-4xl text-center mb-24 text-black"
+            className="font-heading mw-4xl text-center mb-24 "
             style={{ fontSize: "3.0rem", fontWeight: "bold" }}
           >
             <u>Redefining Real Estate Experience</u>
           </h1>
           <Row className="mb-32 mt-10">
             <Col md={6}>
-              <p className="fs-5 text-secondary-light mt-6 mb-2">
+              <p
+                className="text-secondary-light mt-6 mb-2"
+                style={{ fontSize: "1.5rem" }}
+              >
                 At our company, we aim to redefine the real estate experience by
                 providing exceptional service and expertise. Our mission is to
                 help clients navigate the complexities of the real estate market
@@ -39,7 +42,10 @@ function AboutUs() {
           </Row>
           <Row className="mb-32">
             <Col md={6} className="order-md-2">
-              <p className="fs-5 text-secondary-light mt-4 mb-2">
+              <p
+                className="text-secondary-light mt-4 mb-2"
+                style={{ fontSize: "1.5rem" }}
+              >
                 We value diversity and inclusion, believing that a wide range of
                 perspectives enriches our approach and drives innovation. Our
                 success is built on the collective efforts of a talented and
