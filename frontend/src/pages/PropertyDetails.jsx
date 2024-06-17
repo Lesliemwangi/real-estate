@@ -23,7 +23,7 @@ const PropertyDetails = () => {
   }
 
   return (
-    <Container className="mb-5 mt-3">
+    <Container className="mb-5 mt-3 text-white">
       <Button onClick={() => navigate(-1)} className="mb-3">
         Back
       </Button>
@@ -42,35 +42,35 @@ const PropertyDetails = () => {
           <div className="property-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
             <h2
               style={{
-                fontSize: "2.5rem",
+                fontSize: "3.0rem",
                 fontWeight: "bold",
                 textDecoration: "underline",
               }}
             >
               {property.name}
             </h2>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Location:</strong> {property.location}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Price:</strong> {property.price}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Description:</strong> {property.description}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Size:</strong> {property.size}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Bedrooms:</strong> {property.bedrooms}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Bathrooms:</strong> {property.bathrooms}
             </p>
-            <p style={{ fontSize: "1.3rem" }}>
+            <p style={{ fontSize: "1.8rem" }}>
               <strong>Amenities:</strong> {property.amenities}
             </p>
-            <div className="d-flex mb-4">
+            <div className="mb-4">
               <Review propertyId={property.id} />
               <Booking propertyId={property.id} />
             </div>
