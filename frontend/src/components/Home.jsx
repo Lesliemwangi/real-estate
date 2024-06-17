@@ -5,8 +5,15 @@ function HomePage() {
   return (
     <Container fluid className="homePage">
       <Row className="textContainer">
-        <Col className="d-flex align-items-center justify-content-center">
-          <h1 className="text-center" style={{fontSize: "50px", fontWeight: "bold", textDecoration: "underline"}}>
+        <Col className="d-flex align-items-center justify-content-center text-white">
+          <h1
+            className="text-center"
+            style={{
+              fontSize: "3.0rem",
+              fontWeight: "bold",
+              textDecoration: "underline",
+            }}
+          >
             Find Real Estate & Get Your Dream Place
           </h1>
         </Col>
@@ -26,13 +33,16 @@ function HomePage() {
               maxWidth: "100%",
               height: "auto",
               position: "relative",
-              borderRadius: "15px", 
+              borderRadius: "15px",
             }}
           />
         </Col>
         <Col xs={12} md={6} className="d-flex align-items-center">
           <div>
-            <p className="fs-5 text-secondary-light mt-6 mb-2">
+            <p
+              className="text-secondary-light mt-6 mb-2 text-white"
+              style={{ fontSize: "1.5rem" }}
+            >
               Welcome to Luciannah Ventures Real Estate, where excellence meets
               innovation in the realm of property solutions. At Luciannah
               Ventures, we are dedicated to redefining the real estate
