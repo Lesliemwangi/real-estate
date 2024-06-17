@@ -11,7 +11,7 @@ const PropertyCard = ({ property }) => {
         alt={property.name}
         className="custom-card-img"
       />
-      <Card.Body className="custom-card-body">
+      <Card.Body className="custom-card-body" style={{ fontSize: "1.1rem" }}>
         <Card.Title>{property.name}</Card.Title>
         <Card.Text>{property.description.substring(0, 100)}...</Card.Text>
         <Link to={`/properties/${property.id}`}>

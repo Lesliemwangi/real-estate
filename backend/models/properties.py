@@ -408,7 +408,7 @@ properties = [
         name="Country Estate",
         description="A grand country estate with expansive grounds and luxurious amenities. Features include a swimming pool, a garden, and multiple living areas. Perfect for those seeking a luxurious rural lifestyle.",
         image_url="https://media.istockphoto.com/id/477754371/photo/pool-and-modern-home-exterior.jpg?s=612x612&w=0&k=20&c=26KJRR5AdNvgGtlttzsnM3R8oz_-kiyuXwJ-mHFhMi8=",
-        price="kes 40m",
+        price="KES 40M",
         location="Kileleshwa",
         size="5000sq ft",
         bedrooms=5,

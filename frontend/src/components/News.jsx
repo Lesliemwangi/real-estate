@@ -25,8 +25,8 @@ const News = () => {
   return (
     <Container>
       <h1
-        className="my-4 text-center text-decoration-underline"
-        style={{ fontWeight: "bold", fontSize: "3.0rem" }}
+        className="my-4 text-center text-decoration-underline text-white"
+        style={{ fontWeight: "bold", fontSize: "4.0rem" }}
       >
         Real Estate News
       </h1>

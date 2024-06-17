@@ -55,10 +55,10 @@ function Contacts() {
   };
 
   return (
-    <Container className="my-5">
+    <Container className="my-5 text-white">
       <h2
         className="text-center mb-4"
-        style={{ fontSize: "2.5rem", fontWeight: "bold", textDecoration: "underline" }}
+        style={{ fontSize: "4.0rem", fontWeight: "bold", textDecoration: "underline" }}
       >
         Contact Us
       </h2>
@@ -71,7 +71,7 @@ function Contacts() {
               render={({ field, fieldState }) => (
                 <Form.Group className="mb-3" controlId="formBasicName">
                   <Form.Label
-                    style={{ fontWeight: "bold", fontSize: "1.3rem" }}
+                    style={{ fontWeight: "bold", fontSize: "2.0rem" }}
                   >
                     Name:
                   </Form.Label>
@@ -95,7 +95,7 @@ function Contacts() {
               render={({ field, fieldState }) => (
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label
-                    style={{ fontWeight: "bold", fontSize: "1.3rem" }}
+                    style={{ fontWeight: "bold", fontSize: "2.0rem" }}
                   >
                     Email address:
                   </Form.Label>
@@ -119,7 +119,7 @@ function Contacts() {
               render={({ field, fieldState }) => (
                 <Form.Group className="mb-3" controlId="formBasicSubject">
                   <Form.Label
-                    style={{ fontWeight: "bold", fontSize: "1.3rem" }}
+                    style={{ fontWeight: "bold", fontSize: "2.0rem" }}
                   >
                     Subject:
                   </Form.Label>
@@ -143,7 +143,7 @@ function Contacts() {
               render={({ field, fieldState }) => (
                 <Form.Group className="mb-3" controlId="formBasicMessage">
                   <Form.Label
-                    style={{ fontWeight: "bold", fontSize: "1.3rem" }}
+                    style={{ fontWeight: "bold", fontSize: "2.0rem" }}
                   >
                     Message:
                   </Form.Label>

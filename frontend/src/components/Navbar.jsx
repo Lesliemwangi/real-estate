@@ -18,7 +18,7 @@ function Navbar() {
           />
           <span
             className="ml-2"
-            style={{ fontSize: "20px", fontWeight: "bold" }}
+            style={{ fontSize: "2.0rem", fontWeight: "bold" }}
           >
             Luciannah Ventures
           </span>
@@ -30,7 +30,7 @@ function Navbar() {
               <Nav.Link
                 href="/"
                 className="text-center"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "2.0rem", fontWeight: "bold" }}
               >
                 Home
               </Nav.Link>
@@ -39,7 +39,7 @@ function Navbar() {
               <Nav.Link
                 href="/properties"
                 className="text-center"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "2.0rem", fontWeight: "bold" }}
               >
                 Properties
               </Nav.Link>
@@ -48,7 +48,7 @@ function Navbar() {
               <Nav.Link
                 href="/about"
                 className="text-center"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "2.0rem", fontWeight: "bold" }}
               >
                 About Us
               </Nav.Link>
@@ -57,7 +57,7 @@ function Navbar() {
               <Nav.Link
                 href="/news"
                 className="text-center"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "2.0rem", fontWeight: "bold" }}
               >
                 News
               </Nav.Link>
@@ -66,7 +66,7 @@ function Navbar() {
               <Nav.Link
                 href="/contacts"
                 className="text-center"
-                style={{ fontSize: "20px", fontWeight: "bold" }}
+                style={{ fontSize: "2.0rem", fontWeight: "bold" }}
               >
                 Contacts
               </Nav.Link>

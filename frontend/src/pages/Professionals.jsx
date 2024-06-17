@@ -16,14 +16,14 @@ function Professionals() {
     <>
       <h3
         className="font-heading mb-14 text-center text-white"
-        style={{ fontSize: "3.0rem", fontWeight: "bold" }}
+        style={{ fontSize: "4.0rem", fontWeight: "bold" }}
       >
         <u>Our Professionals</u>
       </h3>
       <div className="text-center mb-16">
         <h4
           className="mb-6 text-center text-white"
-          style={{ fontSize: "2.5rem" }}
+          style={{ fontSize: "3.0rem" }}
         >
           <u>Meet the Team</u>
         </h4>
@@ -48,7 +48,10 @@ function Professionals() {
                 src={professional.image_url}
                 className="custom-card-img"
               />
-              <Card.Body className="custom-card-body">
+              <Card.Body
+                className="custom-card-body"
+                style={{ fontSize: "1.4rem" }}
+              >
                 <Card.Title>{professional.title}</Card.Title>
                 <Card.Text>{professional.description}</Card.Text>
               </Card.Body>
