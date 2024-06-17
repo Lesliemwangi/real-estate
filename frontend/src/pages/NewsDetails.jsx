@@ -8,20 +8,12 @@ const NewsDetails = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchNews = async () => {
-      try {
-        const response = await fetch(`http://localhost:8000/newsdetails/${id}`);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setNews(data);
-      } catch (error) {
-        console.error("Error fetching news details:", error);
-      }
-    };
-
-    fetchNews();
+    fetch(`http://localhost:8000/newsdetails/${id}`)
+      .then((response) => response.json())
+      .then((data) => setNews(data))
+      .catch((error) =>
+        console.error("Error fetching news details:", error)
+      );
   }, [id]);
 
   if (!news) {
@@ -35,26 +27,34 @@ const NewsDetails = () => {
       </Button>
       <Row>
         <Col md={6}>
-          <img
-            src={news.image_url}
-            alt={news.title}
-            className="img-fluid rounded"
-            style={{ maxWidth: "100%", height: "90%" }}
-          />
+          <div
+            className="article_details"
+            style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}
+          >
+            <img
+              src={news.image_url}
+              alt={news.title}
+              className="img-fluid rounded"
+              style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
+            />
+          </div>
         </Col>
         <Col md={6}>
-          <div className="article-details">
-            <h1
+          <div
+            className="article-details"
+            style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}
+          >
+            <h2
               className="mb-4"
               style={{ fontWeight: "bold", fontSize: "2.5rem" }}
             >
               <u>{news.title}</u>
-            </h1>
+            </h2>
             <p
               className="description mb-4"
               style={{
                 fontWeight: "bold",
-                fontSize: "1.6rem",
+                fontSize: "1.5rem",
                 textDecoration: "underline",
               }}
             >

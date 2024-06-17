@@ -23,22 +23,23 @@ const PropertyDetails = () => {
   }
 
   return (
-    <Container className="mb-5">
+    <Container className="mb-5 mt-3">
       <Button onClick={() => navigate(-1)} className="mb-3">
         Back
       </Button>
       <Row>
         <Col md={6}>
-          <div className="property-card">
+          <div className="property-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
             <img
               src={property.image_url}
               alt={property.name}
               className="property-image"
+              style={{ width: "100%", height: "auto", maxHeight: "80vh", borderRadius: "10px" }}
             />
           </div>
         </Col>
         <Col md={6}>
-          <div className="property-card">
+          <div className="property-card" style={{ padding: "20px", boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
             <h2
               style={{
                 fontSize: "2.5rem",
@@ -69,8 +70,10 @@ const PropertyDetails = () => {
             <p style={{ fontSize: "1.3rem" }}>
               <strong>Amenities:</strong> {property.amenities}
             </p>
-            <Review propertyId={property.id} />
-            <Booking propertyId={property.id} />
+            <div className="d-flex mb-4">
+              <Review propertyId={property.id} />
+              <Booking propertyId={property.id} />
+            </div>
           </div>
         </Col>
       </Row>
