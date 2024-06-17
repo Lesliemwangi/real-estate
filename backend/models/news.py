@@ -91,7 +91,7 @@ news = [
     NewsDetails(
         title="Top 10 Cities to Invest in Real Estate",
         description="A list of the top 10 cities that offer the best real estate investment opportunities.",
-        content="According to industry analysts, the top 10 cities for real estate investment in 2024 are: 1. Austin, TX 2. Raleigh-Durham, NC 3. Phoenix, AZ 4. Nashville, TN 5. Denver, CO 6. Seattle, WA 7. Atlanta, GA 8. Dallas-Fort Worth, TX 9. Charlotte, NC 10. Tampa, FL. These cities are expected to see continued population growth, economic expansion, and rising home prices, making them attractive for real estate investors.",
+        content="According to industry analysts, the top 10 cities for real estate investment in 2024 are: 1. Nairobi 2. Mombasa 3. Nanyuki 4. Malindi 5. Kiambu 6. Nakuru 7. Kisumu 8. Eldoret 9. Naivasha 10. Machakos. These cities are expected to see continued population growth, economic expansion, and rising home prices, making them attractive for real estate investors.",
         image_url="https://www.noradarealestate.com/wp-content/uploads/2023/11/best-places-to-invest-in-real-estate.jpg"
     ),
     NewsDetails(
