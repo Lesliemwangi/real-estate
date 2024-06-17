@@ -2,53 +2,45 @@
 
 #### Date, 2024/04/11
 
-#### By Leslie Wambui Mwangi
+## By Leslie Wambui Mwangi
 
-### Project description:
+# Project description:
 ## Luciannah Ventures Real Estate
 Welcome to Luciannah Ventures Real Estate, a modern and innovative platform dedicated to providing exceptional property solutions. Our mission is to redefine the real estate experience by offering personalized service and profound industry expertise. Whether you are looking for a cozy home, a strategic business location, or a lucrative investment opportunity, we strive to guide you every step of the way with our holistic approach and tailored solutions.
 
-# Features
-HomePage
-The homepage sets the stage with an inviting introduction to Luciannah Ventures Real Estate. It features a high-impact headline, an engaging introductory paragraph, and a visually appealing image to captivate visitors.
+## Features
+### HomePage
+The homepage sets the stage with an inviting introduction to Luciannah Ventures Real Estate. It features a high-impact headline, an engaging introductory paragraph, and a visually appealing image to captivate visitors. It also showcases the company's impressive stats, including 15 years of experience, 5 awards, and over 100 properties ready for clients.
 
-Properties
+### About Us
+The AboutUs section delves deeper into the company's ethos and values, emphasizing its dedication to redefining the real estate experience. This page articulates the company's mission to provide exceptional service and expertise, foster diversity and inclusion, and maintain a culture of respect, integrity, and excellence. The component also integrates the CoreValues and Team components, showcasing the foundational principles and the professional team behind Luciannah Ventures.
+
+### Properties
 The Properties page dynamically displays a comprehensive list of available properties, fetched from a backend server. Each property is presented with essential details and images, providing a seamless browsing experience for potential buyers and investors.
 
-Property Details
+### Property Details
 The Property Details page offers an in-depth look at individual properties. Users can explore detailed information, including location, price, description, size, bedrooms, bathrooms, and amenities. The page also features integrated reviews and booking options, enhancing user engagement and convenience.
 
-About Us
-The About Us section highlights our commitment to redefining the real estate experience. It emphasizes our dedication to diversity, inclusion, and innovation. The section is visually enriched with images that represent our core values and team.
-
-News
+### News
 Stay updated with the latest real estate news through our News section. It features articles fetched from a backend server, presented in an organized and visually appealing manner. Each news article includes an image, title, description, and a "Read more" link for detailed insights.
 
-News Details
+### News Details
 The News Details page provides a detailed view of individual news articles. Users can explore the full content of each article, accompanied by images, and navigate back to the main news page seamlessly.
 
-Technologies Used
-Frontend: React, React-Bootstrap
-Backend: Fetch API for data retrieval
-Styling: Custom CSS for styling components and Bootstrap for responsive design
-Installation and Setup
+### Technologies Used
+    Frontend: React, React-Bootstrap
+    Backend: Fetch API for data retrieval
+    Styling: Custom CSS for styling components and Bootstrap for responsive design
+    Deployment: GitHub Pages for hosting the application
+
+### Installation and Setup
 Clone the repository:
-sh
-Copy code
-git clone https://github.com/yourusername/luciannah-ventures-real-estate.git
-Navigate to the project directory:
-sh
-Copy code
-cd luciannah-ventures-real-estate
-Install dependencies:
-sh
-Copy code
-npm install
-Run the application:
-sh
-Copy code
-npm start
-API Endpoints
+git@github.com:Lesliemwangi/real-estate.git
+
+# Live Link
+https://github.com/Lesliemwangi/real-estate.git
+
+# License
 Property Details:
 
 Endpoint: http://localhost:8000/propertydetails
